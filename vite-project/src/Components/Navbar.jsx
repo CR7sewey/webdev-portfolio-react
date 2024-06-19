@@ -3,6 +3,7 @@ import { links } from "../../project-assets/data";
 
 const Navbar = () => {
   console.log(links);
+  // sm on tailwind is for screen sizes (@media)
   return (
     <nav className="bg-cyan-300">
       <div className="align-element py-4 flex flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:py-8">
