@@ -1,5 +1,6 @@
 import React from "react";
 import { skills } from "../../project-assets/data";
+import SkillItem from "./SkillItem";
 
 const Skills = () => {
   return (
@@ -13,13 +14,7 @@ const Skills = () => {
       <div className="py-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {skills.map((values) => {
           const { id, title, icon, text } = values;
-          return (
-            <div key={id}>
-              <span>{icon}</span>
-              <h4 className="mt-6 font-bold">{title}</h4>
-              <p className="mt-2 text-slate-500">{text}</p>
-            </div>
-          );
+          return <SkillItem {...values} key={id} />;
         })}
       </div>
     </section>
