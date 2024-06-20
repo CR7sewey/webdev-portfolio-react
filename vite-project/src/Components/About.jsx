@@ -3,7 +3,7 @@ import about from "../../project-assets/about.svg";
 
 const About = () => {
   return (
-    <section className="bg-slate-200 py-20" id="about">
+    <section className="bg-slate-300 py-20" id="about">
       <div className="align-element grid md:grid-cols-2 items-center gap-16">
         <img src={about} className="w-full h-64" />
         <article>
